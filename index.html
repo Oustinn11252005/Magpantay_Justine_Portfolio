@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-container">
+                <h1 class="logo">Your Name</h1>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <img src="assets/images/profile.jpg" alt="Profile photo of Your Name, a web developer" class="profile-img">
+                <h2>About Me</h2>
+                <p>I'm a passionate web developer with experience in HTML, CSS, JavaScript, and responsive design. I love creating user-friendly websites that solve real problems. This portfolio showcases my skills and projects.</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="assets/images/project1.jpg" alt="Screenshot of Project 1: A responsive e-commerce site">
+                        <h3>Project 1: E-Commerce Site</h3>
+                        <p>A fully responsive online store built with HTML, CSS Grid, and JavaScript for cart functionality. Features include product filtering and mobile optimization.</p>
+                        <a href="https://github.com/yourusername/project1" class="project-link" target="_blank">View on GitHub</a>
+                    </article>
+                    <article class="project-card">
+                        <img src="assets/images/project2.jpg" alt="Screenshot of Project 2: A weather app dashboard">
+                        <h3>Project 2: Weather App</h3>
+                        <p>An interactive weather dashboard using the OpenWeather API, vanilla JS, and CSS animations. Displays real-time data with a clean, accessible UI.</p>
+                        <a href="https://github.com/yourusername/project2" class="project-link" target="_blank">View on GitHub</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Let's connect! Email me at your.email@example.com or download my resume.</p>
+                <a href="assets/resume.pdf" class="cta-button" download>Download Resume</a>
+                <form class="contact-form" id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved. | <a href="#about">Back to Top</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
